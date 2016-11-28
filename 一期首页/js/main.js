@@ -1,8 +1,20 @@
 $(function(){
-	$('#fullpage').fullpage({
-		anchors: ['page1', 'page2', 'page3', 'page4'],
-		menu: '#menu',
-		css3:true,
-		continuousVertical:false
-	});
+	var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        direction: 'horizontal',
+        effect : 'fade',
+        slidesPerView: 1,
+        paginationClickable: true,
+        spaceBetween: 0,
+        mousewheelControl: true,
+        onTouchMove: function(swiper){
+	       swiper.lockSwipeToNext();
+    	   swiper.lockSwipeToPrev();
+    	   setTimeout(function(){
+	    	   	swiper.unlockSwipeToNext();
+	    	    swiper.unlockSwipeToPrev();
+    	   },500)
+	    }
+    });
+    
 });
