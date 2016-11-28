@@ -16,5 +16,11 @@ $(function(){
     	   },500)
 	    }
     });
-    
+    // 登录注册页面 跳转iframe
+    $(".register").click(function() {
+        $(".lr").attr("src","../前台页面/register.html").show()
+    });
+    $(".login").click(function() {
+        $(".lr").attr("src","../前台页面/login.html").show()
+    });
 });
