@@ -26,7 +26,7 @@ function durationValue(value) {
 function createAWheel() {
     var wheelDiv = document.createElement('div');
     var image = document.createElement('img');
-    image.src = './img/setting' + randomInteger(1, 5) + '.png';
+    image.src = './img/setting' + randomInteger(1, 6) + '.png';
     wheelDiv.style.top = "200px";
     wheelDiv.style.left = "48%";
     var spinAnimationName = (Math.random() < 0.5) ? 'clockwiseSpin' : 'counterclockwiseSpinAndFlip';
