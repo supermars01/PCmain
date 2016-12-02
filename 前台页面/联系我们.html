@@ -19,15 +19,15 @@
     <body class="gray-bg2">
         <header class="developer-head-1">
             <div class="login-header-main">
-                <img src="./img/logo.png" class="logo" alt="">
+                <a href="index.html"><img src="./img/logo.png" class="logo" alt=""></a>
                 <ul class="nav-menu">
-                    <li><a href="">首页</a></li>
+                    <li><a href="index.html">首页</a></li>
                     <li><a href="开发者中心.html">开发者中心</a></li>
                     <li><a href="联系我们.html" class="active">联系我们</a></li>
                 </ul>
                 <ul class="nav-btn">
                     <li><a href="login.html">登录</a></li>
-                    <li><a href="register.html">注册</a></li>
+                    <li><a href="register.html">会员注册</a></li>
                 </ul>
             </div>
             <div class="star"></div>
@@ -91,12 +91,12 @@
                             </select>
                         </div>
                         <div class="clearfix"></div>
-                        <div class="form-group col-sm-12">
+                        <div class="form-group p-part">
                             <label>您需要帮助的内容</label>
                             <textarea name="helpcontent" class="form-control m-t-sm"></textarea>
                         </div>
-                        <div class="form-group col-sm-12 text-center">
-                            <button type="submit" class="btn btn-primary pull-right pl20 pr20" id="sendBtn">发送</button>
+                        <div class="form-group p-part">
+                            <button type="submit" class="btn btn-primary pull-right contact-btn" id="sendBtn">发送</button>
                         </div>
                         <div class="clearfix"></div>
                     </form>
@@ -110,7 +110,7 @@
                 <li><a href="">联系我们</a></li>
                 <li><a href="">关于我们</a></li>
             </ul>
-           <p>京公网安备 11000002000088号 | 京ICP 备123456789   号 1  | Copyright © 2004 - 2016  成长支付 版权所有</p>
+           <p>京ICP 备1047270 号-6&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;成长支付 版权所有</p>
        </footer>
         <script src="./js/jquery.min.js?v=2.1.4"></script>
         <script src="./js/plugins/validate/jquery.validate.min.js"></script>
@@ -123,6 +123,9 @@
                 var intervalAnimate=setInterval(function(){
                     animateInit();
                 },3000);
+                setTimeout(function(){
+                    clearInterval(intervalAnimate);
+                },120000);//循环执行两次则停止播放
                 // 表单验证
                 $("#contactForm").validate({
                     rules: {
@@ -186,6 +189,7 @@
                     if(j==9){
                         j=1;
                     }
+                    console.log(j);
                 },3000);
                 
                 
