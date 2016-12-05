@@ -7,8 +7,47 @@
     <title>成长支付</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" type="text/css" href="css/kissui.css">
-    <link rel="stylesheet" type="text/css" href="css/scrollanim.min.css">
+    <link rel="stylesheet" type="text/css" href="css/aos.css">
+    <style type="text/css">
+        [aos=fade-down] {
+            -webkit-transform:translate(0,-50px);
+            -ms-transform:translate(0,-50px);
+            transform:translate(0,-50px);
+            -webkit-transition-delay:1s;
+            -webkit-transition-duration:3s
+        }
+        [aos=fade-down].aos-animate {
+            -webkit-transform:translate(0,0);
+            -ms-transform:translate(0,0);
+            transform:translate(0,0)
+        }
+        [aos=fade-in] {
+            -webkit-transition-delay:1.5s;
+            -webkit-transition-duration:1s;
+            -webkit-transition-timing-function:ease;
+            opacity: 0;
+        }
+        [aos=fade-in].aos-animate {
+            opacity: 1;
+            -webkit-transform:translate(0,0);
+            -ms-transform:translate(0,0);
+            transform:translate(0,0)
+        }
+        [aos=fade-up] {
+            -webkit-transform:translate(0,60px);
+            -ms-transform:translate(0,60px);
+            transform:translate(0,60px);
+            -webkit-transition-delay:.8s;
+            -webkit-transition-duration:1s;
+            -webkit-transition-timing-function:ease-in-out;
+            opacity: 1!important;
+        }
+        [aos=fade-up].aos-animate {
+            -webkit-transform:translate(0,0);
+            -ms-transform:translate(0,0);
+            transform:translate(0,0);
+        }
+    </style>
 </head>
 
 <body>
@@ -26,19 +65,19 @@
                 <a href="register.html" class="btn">会员注册</a>
             </header>
             <div class="sec-head">
-                <h2 data-kui-anim="slideformRight">为成长型企业设计的在线支付产品</h2>
-                <h3 data-kui-anim="slideformTop">成长支付为成长型企业解决发展中所面临的支付难题，<br>成熟的支付解决方案、持续稳定的金融级服务、及时准确的技术支持，<br>让支付接入变的简单、高效。</h3>
-                <a data-kui-anim="fadeIn" href="register.html" class="btn1">会员注册</a>
+                <h2 aos="slide-left">为成长型企业设计的在线支付产品</h2>
+                <h3 aos="fade-down">成长支付为成长型企业解决发展中所面临的支付难题，<br>成熟的支付解决方案、持续稳定的金融级服务、及时准确的技术支持，<br>让支付接入变的简单、高效。</h3>
+                <a aos="fade-in" href="register.html" class="btn1">会员注册</a>
                 <div><span class="btn-arrow"></span></div>
             </div>
             <div class="sec-content">
-                <div class="sec-header" data-kui-anim="fadeInUp">
+                <div class="sec-header" aos="slide-up">
                     <h2 style="color:#2a55c9">产品特性</h2>
                     <div class="title-img"></div>
                     <p class="sec-pt">成长支付不再繁琐。会员注册成功即刻开通多种支付渠道，登录后台可在线快速调试接口。</p>
                 </div>
-                <ul class="sec-ul">
-                    <li data-kui-anim="slideInUp1">
+                <ul class="sec-ul" style="height:500px;" aos="fade-up">
+                    <li >
                         <h4>更简洁的接口文档</h4>
                         <div class="bg sec-pro" data-ibg-bg="img/jianjie.png"></div>
                         <p>成长支付系统底层处理了更多的任务，
@@ -46,35 +85,35 @@
                             <br>开发者不必成为支付专家，
                             <br> 依然可以快速接入成长支付。</p>
                     </li>
-                    <li data-kui-anim="slideInUp1">
+                    <li>
                         <h4>自动开通支付渠道</h4>
                         <div class="bg sec-pro" data-ibg-bg="img/dqudao.png"></div>
                         <p>注册成功，微信支付、支付宝、
                             <br>16家银行卡支付渠道将自动开通。
                             <br>您可以使用成长支付的“PC收银台”
-                            <br> 以及“移动收银台”完成最终</p>
+                            <br> 以及“移动收银台”完成最终收款 。</p>
                     </li>
-                    <li data-kui-anim="slideInUp1">
+                    <li >
                         <h4>安全稳定</h4>
                         <div class="bg sec-pro" data-ibg-bg="img/safe.png"></div>
                         <p>成长支付使用了RSA加密技术，
                             <br>以确保每一笔交易都能准确无误的完成。
                             <br>系统接口支持并发200+次/秒，
-                            <br> 即使交易量的陡然上升，</p>
+                            <br> 即使交易量的陡然上升，依然应对自如。</p>
                     </li>
                 </ul>
             </div>
-            <div class="sec-content wt" style="margin-top:30px">
-                <div class="sec-header" data-kui-anim="fadeInUp">
+            <div class="sec-content wt" style="margin-top:170px">
+                <div class="sec-header" aos="slide-up">
                     <h2 style="color:#fff">收银台</h2>
                     <div class="title-img"></div>
-                    <p class="sec-pt sec2">移动端、PC端购物场景、支付渠道、接口演示</p>
+                    <p class="sec-pt sec2">移动端、PC端购物场景、支付渠道、接口演示。</p>
                 </div>
-                <div class="sec2-img" data-kui-anim="fadeInR">
+                <div class="sec2-img">
                     <div>
-                        <img data-kui-anim="fadeInLeft1" style="float:left" src="img/computer.png" width="703">
-                        <img data-kui-anim="fadeInDown" src="img/phone.png" width="184" style="position:absolute;left:460px;top:213px">
-                        <div class="sec2-imgr">
+                        <img aos="fade-right" style="float:left" src="img/computer.png" width="703">
+                        <img aos="fade-down" src="img/phone.png" data-aos-delay="300" width="184" style="position:absolute;left:460px;top:213px;">
+                        <div class="sec2-imgr" aos="fade-left">
                             <ul class="rt">
                                 <li>从这一刻开始，
                                     <br>只有快捷、安全的收款体验。</li>
@@ -91,20 +130,20 @@
                     </div>
                 </div>
             </div>
-            <div class="sec-content wt" style="margin-top:55px;">
-                <div class="solve" data-kui-anim="fadeInUp">
+            <div class="sec-content wt" style="margin-top:65px;">
+                <div class="solve" aos="slide-up">
                     <h2>平台商支付解决方案</h2>
                     <div class="title-img"></div>
                     <p class="sec-pt">一站式解决子商户入驻、多重账务管理、多级返佣、商户结算难题。</p>
                 </div>
                 <div class="sec2-img" style="margin-top:0">
-                    <div class="sec3" data-kui-anim="fadeInLeft1">
+                    <div class="sec3" aos="fade-right">
                         <h2>轻松管理子商户</h2>
                         <img src="img/11.png" width="425">
                         <p>子商户快速入件，
                             <br>每一笔交易数据都清晰可查;</p>s
                     </div>
-                    <div class="sec3" data-kui-anim="fadeInRight2">
+                    <div class="sec3" aos="fade-left">
                         <h2>智能清结算系统，合法合规</h2>
                         <img src="img/12.png" width="425">
                         <p>全新设计的清结算系统，
@@ -115,14 +154,14 @@
                 </div>
             </div>
             <div class="sec-content lt">
-                <div data-kui-anim="fadeInUp">
+                <div aos="slide-up">
                     <h2 style="color:#2a55c9">为您构建了高效的企业管理平台</h2>
                     <div class="title-img"></div>
                     <p class="sec-pt">基于实时交易数据分析，为企业快速而准确的决策提供依据。</p>
                 </div>
                 <div class="sec2-img">
                     <ul class="sec-lt-ul">
-                        <li class="fr" data-kui-anim="fadeInRight2">
+                        <li class="fr" aos="slide-left" style="transition-duration: 1.8s;">
                             <div class="item">
                                 <div class="head-img"><img src="img/01.png" width="62"><span>开发者</span></div>
                                 <p>灵活的在线接口调试工具，</p>
@@ -133,17 +172,18 @@
                             </div>
                             <img class="pic" src="img/01.jpg" width="290">
                         </li>
-                        <li class="fl" data-kui-anim="fadeInLeft1">
+                        <li class="fl" aos="slide-right" style="transition-duration: 1.8s;">
                             <div class="item">
                                 <div class="head-img"><img src="img/02.png" width="62"><span>运营管理人员</span></div>
                                 <p>对于运营管理人员而言，</p>
                                 <p>掌握交易数据变化至关重要。</p>
-                                <p>成长支付提供按交易量、渠道、 时间段三种统计维度，</p>
-                                <p>您也可以查看每一笔交易</p>
+                                <p>成长支付提供按交易量、渠道、</p>
+                                <p>时间段三种统计维度，</p>
+                                <p>您也可以查看每一笔交易的详细信息。</p>
                             </div>
                             <img class="pic" src="img/02.jpg" width="290">
                         </li>
-                        <li class="fr" data-kui-anim="fadeInRight2">
+                        <li class="fr" aos="slide-left" style="transition-duration: 1.8s;">
                             <div class="item">
                                 <div class="head-img"><img src="img/03.png" width="62"><span>财务人员</span></div>
                                 <p>每一笔即时到帐的交易资金</p>
@@ -183,7 +223,7 @@
                             </a>
                         </li>
                     </ul>
-                    <p>京ICP 备1047270 号-6&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;成长支付 版权所有</p>
+                    <p class="horP">京ICP 备1047270 号-6<span class="horLine">|</span>成长支付 版权所有</p>
                 </div>
             </div>
         </div>
@@ -194,6 +234,7 @@
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/plugins/scrollanim/scrollanim.js"></script>
     <script type="text/javascript" src="js/jquery-bg/jquery-interactive_bg.js"></script>
+    <script type="text/javascript" src="js/aos.js"></script>
     <script type="text/javascript">
     $(window).scroll(function() {
         var sc = $(window).scrollTop();
@@ -209,6 +250,10 @@
         }, 300);
     });
     $(".bg").interactive_bg();
+        AOS.init({
+            duration: 1000,
+            once:true
+        });
     </script>
 </body>
 
