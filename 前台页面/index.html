@@ -21,7 +21,7 @@
             -ms-transform:translate(0,0);
             transform:translate(0,0)
         }
-        [aos=fade-in] {
+        [aos=fade-in].aos-animate {
             -webkit-transition-delay:1.5s;
             -webkit-transition-duration:1s;
             -webkit-transition-timing-function:ease;
@@ -33,19 +33,16 @@
             -ms-transform:translate(0,0);
             transform:translate(0,0)
         }
-        [aos=fade-up] {
-            -webkit-transform:translate(0,60px);
-            -ms-transform:translate(0,60px);
-            transform:translate(0,60px);
-            -webkit-transition-delay:.8s;
-            -webkit-transition-duration:1s;
-            -webkit-transition-timing-function:ease-in-out;
-            opacity: 1!important;
-        }
         [aos=fade-up].aos-animate {
             -webkit-transform:translate(0,0);
             -ms-transform:translate(0,0);
             transform:translate(0,0);
+        }
+/*        a.btn1{
+            -webkit-transition:none;
+        }*/
+        a.btn1:hover{
+            -webkit-transition:none;
         }
     </style>
 </head>
@@ -67,7 +64,10 @@
             <div class="sec-head">
                 <h2 aos="slide-left">为成长型企业设计的在线支付产品</h2>
                 <h3 aos="fade-down">成长支付为成长型企业解决发展中所面临的支付难题，<br>成熟的支付解决方案、持续稳定的金融级服务、及时准确的技术支持，<br>让支付接入变的简单、高效。</h3>
-                <a aos="fade-in" href="register.html" class="btn1">会员注册</a>
+                <div aos="fade-in">
+                    <a href="register.html" class="btn1">会员注册</a>
+                </div>
+                
                 <div><span class="btn-arrow"></span></div>
             </div>
             <div class="sec-content">
